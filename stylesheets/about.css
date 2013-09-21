@@ -1,0 +1,81 @@
+#artistEngineerWrapper
+{
+  height:590px;
+  width:100%;
+  margin:200px 0px 0px 0px;
+  background: #000000 url('../img/grey.jpg') repeat-x center center;
+  background-size:100%;
+  padding:0;
+}
+
+#artistEngineerPictures
+{
+  width:50%;
+  min-width:450px;
+  position:relative;
+  float:left; 
+}
+
+#artistEngineerPictures .artist
+{
+
+}
+
+#artistEngineerPictures img
+{
+  height:550px;
+  margin:40px 0 0 0;
+  transition: height 0.5s, margin 0.5s;
+  -webkit-transition: height 0.5s, margin 0.5s;
+}
+
+/*#artistEngineerPictures img:hover
+{
+  height:520px;
+  margin:70px 0 0 15px;
+}*/
+
+#artistEngineerPictures .swipe
+{
+  opacity: .7;
+  background:#000000;
+  color: #dddddd;
+  width:100%;
+  position:absolute;
+}
+
+article.artist > .swipe
+{
+  top:0;
+  left:0;
+  margin:20px 0 20px -100%;
+  -webkit-transition: margin-left;
+  -webkit-transition-timing-function: ease-in;
+  -webkit-transition-duration: 250ms;
+}
+
+article.artist:hover > .swipe
+{
+  margin-left:-100px;
+}
+
+article.engineer > .swipe
+{
+  top:0;
+  right:0;
+  margin:20px -100% 20px 0;
+  -webkit-transition: margin-right;
+  -webkit-transition-timing-function: ease-in;
+  -webkit-transition-duration: 250ms;
+}
+
+article.engineer:hover > .swipe
+{
+  margin-right:-100px;
+}
+
+#artistEngineerPictures:hover img
+{
+  height:520px;
+  margin:70px 0 0 15px;
+}

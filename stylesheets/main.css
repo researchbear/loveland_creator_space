@@ -1,5 +1,224 @@
-#home
-{
-  background:url('../img/LovelandCreatorSpace_Logo_Color.png') 0 0 no-repeat;
-  background-size: 100%;
-}
+/*FONT SETTINGS*/
+  @font-face
+  {
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    src: url('../fonts/trebucbd.ttf');
+  }
+
+  @font-face
+  {
+    font-family: Press Start;
+    src: url('../fonts/PrStart.ttf'),
+         url('../fonts/PrStart.eot'); /* IE9 */
+  }
+
+  @font-face
+  {
+    font-family: Over the Rainbow;
+    src: url('../fonts/OvertheRainbow.ttf'),
+         url('../fonts/OvertheRainbow.eot'); /* IE9*/
+  }
+
+  @font-face
+  {
+    font-family: Engineers Handwriting;
+    src: url('../fonts/EngineersHandwriting.ttf');
+  }
+
+  @font-face
+  {
+    font-family: Basic Hand;
+    src: url('../fonts/BasicHand.ttf');
+  }
+
+  @font-face
+  {
+    font-family: Jimmy Flashcard;
+    src: url('../fonts/JimmyFlashcard.ttf');
+  }
+
+  @font-face
+  {
+    font-family: Lobster;
+    src: url('../fonts/Lobster.otf');
+  }
+
+/*HTML ELEMENTS*/
+  html
+  {
+    height:100%;
+  }
+
+  body
+  {
+    height:100%;
+    margin:0;
+    font-family:'Jimmy Flashcard';
+  }
+
+  h1
+  {
+    font-size:50pt;
+    font-family:'Basic Hand';
+    margin: 0;
+  }
+
+  h2
+  {
+    font-size:35pt;
+    font-family:'Basic Hand';
+    margin: 0;
+  }
+
+  h3
+  {
+    font-size:25pt;
+    font-family:'Basic Hand';
+    margin: 0;
+  }
+
+  p
+  {
+    font-size:15pt;
+    font-family:'Jimmy Flashcard';
+    margin: 5px 0 5px 0;
+  }
+
+  a
+  {
+    color:#990000;
+  }
+
+/*CLASS AND ID DEFINITIONS*/
+  .navbar
+  { 
+    width: 100%;
+    min-width:900px;
+    height: 80px;
+    background: #990000;
+    text-align:center;
+    margin-top:55px;
+    z-index:5;
+  } 
+
+  .navbar a
+  {
+    color: #ffffff;
+    text-decoration:none;
+  }
+  
+  .navbar a:hover
+  {
+    color: #222222;
+  }
+
+  .sticky_navbar
+  {
+    position: fixed;
+    top:0;
+    border-top:50px solid white;
+    margin-top:0px;
+  }
+
+  a.navButton
+  {
+    display:inline-block;
+    width:200px;
+    height:200px;
+    background:url('../img/LovelandCreatorSpace_Logo_NavButton.png') 0 0;
+    vertical-align:-100px;
+    margin-top:-50px;
+    position:relative;
+    z-index:5;
+  }
+  
+  a.navButton:hover
+  {
+    background:url('../img/LovelandCreatorSpace_Logo_NavButton.png') 200px 0;
+  }
+
+  a.navRight
+  {
+    font-family:Press Start;
+    font-size:20px;
+    padding:0px 25px;
+    letter-spacing:-2px;
+  }
+
+  a.navLeft
+  {
+    font-family:Over the Rainbow;
+    font-size:25px;
+    padding:0px 25px;
+    letter-spacing:2px;
+  }
+
+  #contentWrapper
+  {
+    width:100%;
+    background:#ffffff;
+    margin:-10px auto 0 auto;
+  }
+
+  .mainContent
+  {
+    width:900px;
+    color:#222222;
+    margin:0px auto 0px auto;
+    padding:100px 20px 100px 20px;
+  }
+
+  footer
+  {
+    width:100%;
+    background:#990000 url('../img/Paper_Tear_Top.png') repeat-x center top;
+    display:table;
+    z-index:-1;
+    position:relative;
+  }
+
+  section#footerWrapper
+  {
+    margin:50px auto;
+    width:900px;
+    background:#990000;
+  }
+
+  section#footerWrapper>article
+  {
+    width:275px;
+    background:#990000;
+    float:left;
+    margin:0;
+    padding: 10px;
+    color:#ffffff;
+  }
+
+  .centerFooter
+  {
+    border-left:1px solid #aaa;
+    border-right:1px solid #aaa;
+  }
+
+  footer p
+  {
+    font-size:10pt;
+  }
+
+  footer a
+  {
+    color:#ffffff;
+    text-decoration:none;
+  }
+
+  footer a:hover
+  {
+    color:#ffffff;
+    text-decoration:none;
+  }
+
+  footer th
+  {
+    text-align:left;
+  }
